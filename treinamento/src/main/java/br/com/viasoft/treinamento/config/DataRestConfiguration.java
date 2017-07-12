@@ -12,6 +12,8 @@ public class DataRestConfiguration extends RepositoryRestMvcConfiguration {
     @Override
     public RepositoryRestConfiguration config() {
         RepositoryRestConfiguration config = super.config();
+        config.setDefaultPageSize(50);
+        //config.setBasePath("/data");
         config.exposeIdsFor(Usuario.class, Produto.class);
         return config;
     }

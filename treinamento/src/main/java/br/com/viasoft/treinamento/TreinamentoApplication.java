@@ -14,4 +14,5 @@ public class TreinamentoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TreinamentoApplication.class, args);
 	}
+
 }

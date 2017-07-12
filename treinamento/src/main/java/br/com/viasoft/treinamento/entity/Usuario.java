@@ -1,5 +1,6 @@
 package br.com.viasoft.treinamento.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -17,6 +18,13 @@ public class Usuario {
 
     private String usuario;
 
+    private String nome;
+
+    private String sobrenome;
+
     private String senha;
+
+    @JsonIgnore
+    private Boolean ativo;
 
 }
